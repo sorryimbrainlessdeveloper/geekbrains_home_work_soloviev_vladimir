@@ -1,0 +1,60 @@
+package ru.geekbrains.java1.lesson1;
+//home_work
+public class Main {
+
+    public static void main(String[] args) {
+//task_2
+        int a = 5;
+        long b = 3;
+        short c = 4;
+        byte e = 6;
+        float f  =8f;
+        double d = 9;
+        char l = 10;
+        boolean x = true;
+        String str = "hello";
+    }
+//task_3
+    public double someMethod_1(int a, int b, int c, int d) {
+        double result = a * (b + (c / d));
+        return result;
+    }
+//task_4
+    public void someMethod_2(int a, int b){
+       int c = a + b;
+       if (c >= 10 && c <= 10){
+           System.out.println(true);
+       } else {
+           System.out.println(false);
+       }
+    }
+//task_5
+    public void someMethod_3(int a){
+        if(a >= 0){
+            System.out.println("положительное число");
+        } else{
+            System.out.println("отрицательное число");
+        }
+    }
+//task_6
+    public void someMethod_4(int a){
+        if(a < 0){
+            System.out.println(true);
+        }
+    }
+//task_7
+    public void someMethod_5(String str){
+        System.out.println("Привет " + str);
+    }
+//task_8
+    public void someMethod_6(int a){
+        //  а - количество дней в проверяемом году на "високосность" :)
+        int b = 366; // количество дней в високосном году
+        int c = b % a;
+        if (c == 0){
+            System.out.println("год является високосным");
+        } else {
+            System.out.println("год не является високосным");
+        }
+    }
+}
