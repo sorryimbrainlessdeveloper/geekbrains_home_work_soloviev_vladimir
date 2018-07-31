@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        Person[] arr = new Person[5];
+        arr[0] = new Person("Vladimir","Developer","lol1@mail.ru",12345,100500,22);
+        arr[1] = new Person("Svetlana","Developer","lol2@mail.ru",12345,100500,22);
+        arr[2] = new Person("Grigory","Developer","lol3@mail.ru",12345,100500,45);
+        arr[3] = new Person("Ekaterina","Developer","lol4@mail.ru",12345,100500,22);
+        arr[4] = new Person("Olga","Developer","lol5@mail.ru",12345,100500,42);
+
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i].getAge() > 40){
+                arr[i].print();
+            }
+        }
+    }
+}
